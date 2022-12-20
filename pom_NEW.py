@@ -202,7 +202,7 @@ def bq_to_gcs(project, bq_dataset, bq_table, \
 
 def read_pomdata_to_score(project, bucket_name, prefix_name):
 
-    fs = gcsfs.GCSFileSystem(project=project)
+    fs = gcsfs.GCSFileSystem(project=project, token = '/home/jupyter/.config/gcloud/application_default_credentials.json')
     files=fs.ls (os.path.join(bucket_name, prefix_name))
     files = [file for file in files if file.endswith('.csv')]
     print("blobs are {}".format(files))

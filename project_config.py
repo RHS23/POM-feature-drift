@@ -1,0 +1,8 @@
+src_table = 'uk_inp_olivemirror_ic.offer_bridging_eoo_base' 
+project_id  = 'skyuk-uk-decis-models-01-prod' 
+#olive_dataset = 'uk_inp_olivemirror_ic'
+midas_dataset = 'uk_pub_midas_mirror_ir'
+target_dataset = 'pom'
+bucket = 'pom-etl-process'
+region = 'europe-west1-b'
+project_env = 'prod'
